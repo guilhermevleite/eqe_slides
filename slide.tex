@@ -1,0 +1,120 @@
+\documentclass[aspectratio=169,t,xcolor=table]{beamer}
+\usepackage[utf8]{inputenc}
+
+\usepackage{booktabs} 
+\usepackage{subcaption}
+
+\usetheme{Ufg}
+
+%-------------------------------------theorems--------------
+\newtheorem{conj}{Conjetura}
+\newtheorem{defi}{Definição}
+\newtheorem{teo}{Teorema}
+\newtheorem{lema}{Lema}
+\newtheorem{prop}{Proposição}
+\newtheorem{cor}{Corolário}
+\newtheorem{ex}{Exemplo}
+\newtheorem{exer}{Exercício}
+
+\setbeamertemplate{theorems}[numbered]
+\setbeamertemplate{caption}[numbered]
+
+%-------------------------------------------------------------%
+%----------------------- Primary Definitions -----------------%
+
+% This command set the default Color, is also possible to choose a custom color
+\setPrimaryColor{UFGBlue} 
+
+% First one is logo in title slide (we recommend use a horizontal image), and second one is the logo used in the remaining slides (we recommend use a square image)
+\setLogos{lib/logos/infw.png}{lib/logos/infw2.png} 
+
+
+% -------------------------------------- Title Slide Information
+\begin{document}
+\title[Inf UFG]{SDSS: A Self-Supervised Spheroid Segmentation
+Method}
+
+\author{Guilherme V Leite\\ \bigskip Advisor: Hélio Pedrini}
+
+\date{2022}
+%-----------------------The next statement creates the title page.
+\frame[noframenumbering]{\titlepage}
+
+
+%------------------------------------------------Slide 1
+\setLayout{vertical} % This command define the layout. 'vertical' can be replace with 'horizontal', 'blank, 'mainpoint', 'titlepage'
+
+\begin{frame}[noframenumbering, plain]
+    \frametitle{Table of Contents}
+    \tableofcontents
+\end{frame}
+
+%---------------------------------------------------------
+\input{chapters/introduction}
+\setBGColor{Ocean}
+\input{chapters/literature}
+\setBGColor{LightGreen}
+\input{chapters/datasets}
+\setBGColor{UFGBlue}
+\input{chapters/method}
+\setBGColor{LightOrange}
+\input{chapters/results}
+\setBGColor{LightPurple}
+\input{chapters/considerations}
+
+%---------------------------------------------------------Slide 8
+\setLayout{horizontal}
+\begin{frame}
+    \frametitle{Sample frame title}
+    This is a text in second frame. For the sake of showing an example.
+    
+    \begin{itemize}
+        \item<1-> Text visible on slide 1
+        \item<2-> Text visible on slide 2
+        \begin{itemize}
+            \item text subitem
+        \end{itemize}
+        \item<3> Text visible on slides 3
+        \item<4-> Text visible on slide 4
+    \end{itemize}
+\end{frame}
+
+%---------------------------------------------------------Slide 9
+\setLayout{blank}
+\begin{frame}
+    
+    \centering
+    \vspace{2cm}
+    
+    \textbf{\Huge Thank You}
+    
+    \ \\
+    
+    \textbf{}
+    \ \\
+    
+    \text{\footnotesize guilherme.vieira.leite@gmail.com}
+    
+    \vspace{2cm}
+    \begin{figure}
+        \centering
+        \begin{subfigure}{0.2\textwidth}
+            \centering
+            \includegraphics[height=1cm]{lib/logos/infw.png}
+        \end{subfigure}%
+        \qquad 
+        \begin{subfigure}{0.2\textwidth}
+            \centering
+            \includegraphics[height=1cm]{lib/logos/ufgw.png}
+        \end{subfigure}
+      
+    \end{figure}
+    
+\end{frame}
+
+%---------------------------------------------------------Slide 10
+\setLayout{titlepage}
+\setBGColor{DarkGray}
+\titlepage
+
+\end{document}
