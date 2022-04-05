@@ -9,16 +9,6 @@
 \setLayout{horizontal}
 
 %---------------------------------------------------------
-\begin{frame}{Segmentation}
-    \begin{figure}
-        \centering
-        \includegraphics[width=.9\textwidth]{readme/layouts.png}
-        \caption{template's layouts.}
-        \label{fig:results}
-    \end{figure}
-\end{frame}
-
-%---------------------------------------------------------
 \begin{frame}{Comparative Table}
     Metric used: \alert{Mean Jaccard}.
     \begin{table}[]
@@ -30,8 +20,142 @@
                 Method & BL5S & BN10S & BN2S & FL5C & FL5S & FN2S & Ours \\
                 \midrule
                 Watershed & $0.73$ & $0.64$ & $0.45$ &  $0.63$ & $0.44$ & $0.41$ & - \\
-                U-Net & - & - & - & - & - & - & -
+                U-Net & $0.75^*$ & - & - & $0.93$ & - & - & -
             \end{tabular}
         }
     \end{table}
+\end{frame}
+
+%---------------------------------------------------------
+\setLayout{blank}
+
+%---------------------------------------------------------
+\begin{frame}{BL5S - 0.73}
+    \begin{figure}[!htb]
+        \centering
+        \subfloat{\includegraphics[width=3cm]{figures/result/bl5s_02_image}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/bl5s_02_pred}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/bl5s_02_gt}}\\
+        \subfloat{\includegraphics[width=3cm]{figures/result/bl5s_28_image}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/bl5s_28_pred}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/bl5s_28_gt}}\\
+        \subfloat{\includegraphics[width=3cm]{figures/result/bl5s_31_image}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/bl5s_31_pred}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/bl5s_31_gt}}
+    \end{figure}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{BN10S - 0.64}
+    \begin{figure}[!htb]
+        \centering
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn10s_61_image}}
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn10s_61_pred}}
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn10s_61_gt}}\\
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn10s_45_image}}
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn10s_45_pred}}
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn10s_45_gt}}\\
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn10s_46_image}}
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn10s_46_pred}}
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn10s_46_gt}}
+    \end{figure}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{BN2S - 0.45}
+    \begin{figure}[!htb]
+        \centering
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn2s_04_image}}
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn2s_04_pred}}
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn2s_04_gt}}\\
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn2s_23_image}}
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn2s_23_pred}}
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn2s_23_gt}}\\
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn2s_97_image}}
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn2s_97_pred}}
+        \subfloat{\includegraphics[width=2cm]{figures/result/bn2s_97_gt}}
+    \end{figure}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{FL5C - 0.63}
+    \begin{figure}[!htb]
+        \centering
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5c_01_image}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5c_01_pred}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5c_01_gt}}\\
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5c_06_image}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5c_06_pred}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5c_06_gt}}\\
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5c_15_image}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5c_15_pred}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5c_15_gt}}
+    \end{figure}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{FL5S - 0.44}
+    \begin{figure}[!htb]
+        \centering
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5s_08_image}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5s_08_pred}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5s_08_gt}}\\
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5s_24_image}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5s_24_pred}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5s_24_gt}}\\
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5s_28_image}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5s_28_pred}}
+        \subfloat{\includegraphics[width=3cm]{figures/result/fl5s_28_gt}}
+    \end{figure}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{FN2S - 0.41}
+    \begin{figure}[!htb]
+    \centering
+    \subfloat{\includegraphics[width=2cm]{figures/result/fn2s_04_image}}
+    \subfloat{\includegraphics[width=2cm]{figures/result/fn2s_04_pred}}
+    \subfloat{\includegraphics[width=2cm]{figures/result/fn2s_04_gt}}\\
+    \subfloat{\includegraphics[width=2cm]{figures/result/fn2s_10_image}}
+    \subfloat{\includegraphics[width=2cm]{figures/result/fn2s_10_pred}}
+    \subfloat{\includegraphics[width=2cm]{figures/result/fn2s_10_gt}}\\
+    \subfloat{\includegraphics[width=2cm]{figures/result/fn2s_32_image}}
+    \subfloat{\includegraphics[width=2cm]{figures/result/fn2s_32_pred}}
+    \subfloat{\includegraphics[width=2cm]{figures/result/fn2s_32_gt}}
+    \end{figure}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{Comparative Table}
+    Metric used: \alert{Mean Jaccard}.
+    \begin{table}[]
+        \centering
+        \setlength{\tabcolsep}{10pt}
+        
+        {\rowcolors{2}{}{LightGray!10}
+            \begin{tabular}{lcccccc}
+                Method & BL5S & BN10S & BN2S & FL5C & FL5S & FN2S \\
+                \midrule
+                Watershed & $0.73$ & $0.64$ & $0.45$ &  $0.63$ & $0.44$ & $0.41$ \\
+                U-Net & $0.75^*$ & - & - & $0.93$ & - & -
+            \end{tabular}
+        }
+    \end{table}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{U-Net}
+    \begin{figure}[!htb]
+        \centering
+        \includegraphics[width=13cm]{figures/result/wrong_example}
+    \end{figure}
+\end{frame}
+
+
+%---------------------------------------------------------
+\begin{frame}{U-Net}
+    \begin{figure}[!htb]
+        \centering
+        \includegraphics[width=13cm]{figures/result/better_example}
+    \end{figure}
 \end{frame}
