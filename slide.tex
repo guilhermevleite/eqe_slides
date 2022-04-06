@@ -3,6 +3,7 @@
 
 \usepackage{booktabs} 
 \usepackage{subcaption}
+\usepackage{tikz}
 
 \usetheme{Ufg}
 
@@ -26,7 +27,7 @@
 \setPrimaryColor{UFGBlue} 
 
 % First one is logo in title slide (we recommend use a horizontal image), and second one is the logo used in the remaining slides (we recommend use a square image)
-\setLogos{lib/logos/infw.png}{lib/logos/infw2.png} 
+\setLogos{lib/logos/ic_w.png}{lib/logos/ic_w2.png} 
 
 
 % -------------------------------------- Title Slide Information
@@ -52,22 +53,22 @@ Method}
 %---------------------------------------------------------
 \input{chapters/introduction}
 \setBGColor{Ocean}
-\input{chapters/literature}
+% \input{chapters/literature}
 \setBGColor{LightGreen}
-\input{chapters/datasets}
+% \input{chapters/datasets}
 \setBGColor{UFGBlue}
-\input{chapters/method}
+% \input{chapters/method}
 \setBGColor{LightOrange}
-\input{chapters/results}
+% \input{chapters/results}
 \setBGColor{DarkPurple}
-\input{chapters/schedule}
+% \input{chapters/schedule}
 \setBGColor{LightPurple}
-\input{chapters/considerations}
+% \input{chapters/considerations}
 
 %---------------------------------------------------------
 \setLayout{blank}
 \setBGColor{UFGBlue}
-\begin{frame}
+\begin{frame}[noframenumbering, plain]{}
     
     \centering
     \vspace{2cm}
@@ -75,8 +76,6 @@ Method}
     \textbf{\Huge Thank You}
     
     \ \\
-    
-    \textbf{}
     \ \\
     
     \text{\footnotesize guilherme.vieira.leite@gmail.com or helio@ic.unicamp.br}
@@ -86,12 +85,12 @@ Method}
         \centering
         \begin{subfigure}{0.2\textwidth}
             \centering
-            \includegraphics[height=1cm]{lib/logos/infw.png}
-        \end{subfigure}%
+            \includegraphics[height=1cm]{lib/logos/ic_w.png}
+        \end{subfigure}
         \qquad 
         \begin{subfigure}{0.2\textwidth}
             \centering
-            \includegraphics[height=1cm]{lib/logos/ufgw.png}
+            \includegraphics[height=1cm]{lib/logos/unicamp_w.png}
         \end{subfigure}
       
     \end{figure}

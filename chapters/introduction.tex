@@ -9,27 +9,76 @@
 \setLayout{vertical}
 
 %---------------------------------------------------------
-\begin{frame}{Cell Cultures}
-    \begin{itemize}
-        \item Vital to industrial and academics applications.
-        \item Key part in drug discovery and development:
-        \begin{itemize}
-            \item Pre-Clinical.
-            \item Clinical.
-        \end{itemize}
-    \end{itemize}
+\begin{frame}
+    \frametitle{Cell Cultures}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \begin{itemize}
+                \item<1-> Vital to applications in:
+                \begin{itemize}
+                    \item<2-> Industry.
+                    \item<3-> Academics.
+                \end{itemize}
+            \end{itemize}
+            
+                \begin{figure}[!htb]
+                    \centering
+                    \visible<6->{\subfloat{\includegraphics[width=1.5cm]{figures/introduction/in_silico}} \hspace*{0.3cm}
+                    \subfloat{\includegraphics[width=1.5cm]{figures/introduction/in_vitro}} \hspace*{0.3cm}
+                    \subfloat{\includegraphics[width=1.5cm]{figures/introduction/in_vivo}}\\
+                    Pre-Clinical}
+                    \visible<7->{\subfloat{\includegraphics[width=5cm]{figures/introduction/clinical}}\\
+                    Clinical}
+                \end{figure}
+        \column{0.5\textwidth}
+            \begin{itemize}    
+                \item<4-> Pharmaceutical context:
+                    \begin{itemize}
+                        \item<5-> Drug discovery and development.
+                        \begin{itemize}
+                            \item<6-> Pre-Clinical.
+                            \item<7-> Clinical trials.
+                        \end{itemize}
+                    \end{itemize}
+            \end{itemize}
+    \end{columns}
 \end{frame}
 
 %---------------------------------------------------------
 \begin{frame}{Drug Discovery}
     \begin{figure}[!htb]
     \centering
-    \subfloat[\textit{in silico}]{\includegraphics[width=2cm]{figures/introduction/in_silico} \label{fig:in_silico}} \hspace*{0.3cm}
-    \subfloat[\textit{in vitro}]{\includegraphics[width=2cm]{figures/introduction/in_vitro} \label{fig:in_vitro}} \hspace*{0.3cm}
-    \subfloat[\textit{in vivo}]{\includegraphics[width=2cm]{figures/introduction/in_vivo} \label{fig:in_vivo}}\\
-    \subfloat[Clinical Trials]{\includegraphics[width=9cm]{figures/introduction/clinical} \label{fig:clinical_trials}}
-    \label{fig:introduction_drug_trials}
+    \setbeamercovered{transparent}
+    \visible<1->{\subfloat[\textit{in silico}]{\includegraphics[width=2cm]{figures/introduction/in_silico}} \hspace*{0.3cm}}
+    \visible<2->{\subfloat[\textit{in vitro}]{\includegraphics[width=2cm]{figures/introduction/in_vitro}} \hspace*{0.3cm}}
+    \visible<3->{\subfloat[\textit{in vivo}]{\includegraphics[width=2cm]{figures/introduction/in_vivo}}}\\
+    \visible<4->{\subfloat[Clinical Trials]{\includegraphics[width=9cm]{figures/introduction/clinical}}}
     \end{figure}
+\end{frame}
+
+%---------------------------------------------------------
+\begin{frame}{Drug Discovery}
+    \begin{columns}
+        \column{0.4\textwidth}
+            \begin{itemize}
+                \item<1-> This process is:
+                \begin{itemize}
+                    \item<2-> Laborious.
+                    \item<3-> Expensive.
+                    \item<4-> Time consuming.
+                \end{itemize}
+                \item<5-> Low success rate:
+                \begin{itemize}
+                    \item<6-> Only \alert{10\%} moves to clinical trials.
+                \end{itemize}
+            \end{itemize}
+        \column{0.4\textwidth}
+            \begin{itemize}
+                \item<7-> Fails are attributed to \alert{pre-clinical} stages.
+                \item<8-> They are too simple.
+                \item<9-> Fail to eliminate bad candidates.
+            \end{itemize}
+    \end{columns}
 \end{frame}
 
 %---------------------------------------------------------

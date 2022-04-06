@@ -56,6 +56,12 @@
             \mathcal{L}_{seg} = \mathcal{L}_{ce} + \lambda_{adv}\mathcal{L}_{adv} + \lambda_{semi}\mathcal{L}_{semi}
         \end{equation}
     \end{block}
+    \begin{block}{Discriminator Loss}
+        \begin{equation}
+            \label{eq:discriminator_loss}
+            \mathcal{L}_{D} = -\sum_{h, w}(1-y_n)     \log(1-D(G(X_n))^{(h, w)} + y_n \log(D(Y_n)^{(h, w)})
+        \end{equation}
+    \end{block}
 \end{frame}
 
 %---------------------------------------------------------
