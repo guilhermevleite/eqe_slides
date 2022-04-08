@@ -125,16 +125,6 @@
 \begin{frame}{3D Cultures}
     \begin{columns}
         \column{0.45\textwidth}
-        \begin{itemize}
-            \item<1-> Most common culture.
-            \item<2-> Cells grow:
-            \begin{itemize}
-                \item<3-> In the culture medium.
-                \item<4-> Monolayer.
-                \item<5-> Attached to the substrate.
-            \end{itemize}
-        \end{itemize}
-
         \begin{figure}[!htb]
             \centering
             \includegraphics[width=6cm]{figures/introduction/3D_culture}
@@ -142,14 +132,22 @@
 
         \column{0.5\textwidth}
         \begin{itemize}
-            \item<6-> Practical to evaluate compounds, since:
+            \item<1-> Cells grow:
+                \begin{itemize}
+                    \item<1-> Floating in the culture medium.
+                    \item<2-> With or without scaffolding.
+                \end{itemize}
+            \item<3-> Microenvironment reproduction:
             \begin{itemize}
-                \item<7-> No ethical committee required.
-                \item<8-> Widespread training of personnel.
-                \item<9-> Immortalized cells.
-                \item<10-> Cells are genetically similar.
-                \item<11-> Cells can be frozen.
-                \item<12-> Cheaper upkeep.
+                \item<4-> Cell-to-cell communication.
+                \item<5-> Interactions between stroma and cell.
+                \item<6-> Cell differentiation.
+            \end{itemize}
+            \item<7-> Better \textit{in vitro} alternative:
+            \begin{itemize}
+                \item<8-> Faster testing.
+                \item<9-> Automation.
+                \item<10-> Reproducibility.
             \end{itemize}
         \end{itemize}
     \end{columns}
@@ -179,27 +177,37 @@
 % \setLayout{horizontal}
 
 \begin{frame}{Objectives}
-    \begin{columns}
-        \column{0.5\textwidth}
             \begin{block}{Global Objectives}
+                \begin{columns}
+                \column{0.5\textwidth}
                 \begin{enumerate}
-                    \item Create the spheroid image dataset (SDSS).
+                    \item Create the spheroid image\\ dataset (SDSS).
+                \end{enumerate}
+                \column{0.5\textwidth}
+                \begin{enumerate}
+                \setcounter{enumi}{1}
                     \item A self-supervised semantic segmentation method.
                 \end{enumerate}
+                \end{columns}
             \end{block}
-        \column{0.5\textwidth}
             \begin{block}{Specific Objectives}
+                \begin{columns}
+                \column{0.5\textwidth}
                 \begin{enumerate}
                     \item Literature review.
                     \item Setup dataset.
                     \item Select metric.
                     \item Develop method.
                     \item Evaluate Loss functions.
+                \end{enumerate}
+                \column{0.5\textwidth}
+                \begin{enumerate}
+                \setcounter{enumi}{5}
                     \item Select GAN backbones.
                     \item Process results.
                 \end{enumerate}
+                \end{columns}
             \end{block}
-    \end{columns}
 \end{frame}
 
 %---------------------------------------------------------
