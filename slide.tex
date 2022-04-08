@@ -5,7 +5,9 @@
 \usepackage{subcaption}
 \usepackage{tikz}
 
-\usetheme{Ufg}
+\hfuzz=99.002pt
+
+% \usetheme{Ufg}
 
 %-------------------------------------theorems--------------
 \newtheorem{conj}{Conjetura}
@@ -17,17 +19,17 @@
 \newtheorem{ex}{Exemplo}
 \newtheorem{exer}{Exercício}
 
-\setbeamertemplate{theorems}[numbered]
-\setbeamertemplate{caption}[numbered]
+% \setbeamertemplate{theorems}[numbered]
+% \setbeamertemplate{caption}[numbered]
 
 %-------------------------------------------------------------%
 %----------------------- Primary Definitions -----------------%
 
 % This command set the default Color, is also possible to choose a custom color
-\setPrimaryColor{UFGBlue} 
+% \setPrimaryColor{UFGBlue} 
 
 % First one is logo in title slide (we recommend use a horizontal image), and second one is the logo used in the remaining slides (we recommend use a square image)
-\setLogos{lib/logos/ic_w.png}{lib/logos/ic_w2.png} 
+% \setLogos{lib/logos/ic_w.png}{lib/logos/ic_w2.png} 
 
 
 % -------------------------------------- Title Slide Information
@@ -43,7 +45,7 @@ Method}
 
 
 %------------------------------------------------Slide 1
-\setLayout{vertical} % This command define the layout. 'vertical' can be replace with 'horizontal', 'blank, 'mainpoint', 'titlepage'
+% \setLayout{vertical} % This command define the layout. 'vertical' can be replace with 'horizontal', 'blank, 'mainpoint', 'titlepage'
 
 \begin{frame}[noframenumbering, plain]
     \frametitle{Table of Contents}
@@ -52,22 +54,22 @@ Method}
 
 %---------------------------------------------------------
 \input{chapters/introduction}
-\setBGColor{Ocean}
+% \setBGColor{Ocean}
 % \input{chapters/literature}
-\setBGColor{LightGreen}
+% \setBGColor{LightGreen}
 % \input{chapters/datasets}
-\setBGColor{UFGBlue}
+% \setBGColor{UFGBlue}
 % \input{chapters/method}
-\setBGColor{LightOrange}
+% \setBGColor{LightOrange}
 % \input{chapters/results}
-\setBGColor{DarkPurple}
+% \setBGColor{DarkPurple}
 % \input{chapters/schedule}
-\setBGColor{LightPurple}
+% \setBGColor{LightPurple}
 % \input{chapters/considerations}
 
 %---------------------------------------------------------
-\setLayout{blank}
-\setBGColor{UFGBlue}
+% \setLayout{blank}
+% \setBGColor{UFGBlue}
 \begin{frame}[noframenumbering, plain]{}
     
     \centering
@@ -97,8 +99,8 @@ Method}
     
 \end{frame}
 %---------------------------------------------------------Slide 10
-\setLayout{titlepage}
-\setBGColor{DarkGray}
+% \setLayout{titlepage}
+% \setBGColor{DarkGray}
 \titlepage
 
 \end{document}
